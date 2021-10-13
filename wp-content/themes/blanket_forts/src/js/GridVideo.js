@@ -52,7 +52,7 @@ export class GridVideo {
 	}
 
 	close(evt) {
-		if (evt.target.closest('.video-modal__content') || evt.target.matches(".video-modal__controls")) return;
+		if (evt.target.closest('.video-modal__content') || evt.target.closest(".video-modal__footer") || evt.target.matches(".video-modal__footer")) return;
 
 		this.DOM.modal.classList.remove('active');
 		this.DOM.content.innerHTML = null;		
