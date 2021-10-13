@@ -156,3 +156,4 @@ class StarterSite extends Timber\Site {
 new StarterSite();
 
 require_once( __DIR__ . '/classes/Enqueue.php' );
+require_once( __DIR__ . '/functions/custom-post-types.php' );

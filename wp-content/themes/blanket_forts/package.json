@@ -17,7 +17,7 @@
     "lint:md:js": "wp-scripts lint-md-js",
     "lint:pkg-json": "wp-scripts lint-pkg-json",
     "packages-update": "wp-scripts packages-update",
-    "start": "wp-scripts start",
+    "start": "wp-scripts start --webpack--devtool=eval-source-map",
     "test:e2e": "wp-scripts test-e2e",
     "test:unit": "wp-scripts test-unit-js"
   },
@@ -29,5 +29,12 @@
     "postcss": "^8.3.9",
     "postcss-cli": "^9.0.1",
     "tailwindcss": "^2.2.16"
+  },
+  "dependencies": {
+    "gsap": "^3.8.0",
+    "imagesloaded": "^4.1.4",
+    "plyr": "^3.6.8",
+    "simple-lightbox": "^2.1.0",
+    "split-type": "^0.2.5"
   }
 }
