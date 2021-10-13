@@ -483,9 +483,9 @@ video {
 	padding: 3vw;
 }.p-2{
 	padding: 0.5rem;
-}.px-8{
-	padding-left: 2rem;
-	padding-right: 2rem;
+}.px-4{
+	padding-left: 1rem;
+	padding-right: 1rem;
 }.px-3{
 	padding-left: 0.75rem;
 	padding-right: 0.75rem;
@@ -513,6 +513,8 @@ video {
 	line-height: 1.5rem;
 }.font-medium{
 	font-weight: 500;
+}.uppercase{
+	text-transform: uppercase;
 }.text-gray-800{
 	--tw-text-opacity: 1;
 	color: rgba(31, 41, 55, var(--tw-text-opacity));
@@ -526,9 +528,13 @@ video {
 	width: 100%;
 }.content-wrapper{
 	min-height: 100vh;
-	padding-left: 2rem;
-	padding-right: 2rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 	padding-top: 20vh;
+}@media (min-width: 1024px){.content-wrapper{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
 }.homepage-wrapper{
 	display: flex;min-height:80vh;
 }.archive{
@@ -571,7 +577,15 @@ video {
 }.page.home .nav-item{
 	--tw-text-opacity: 1;
 	color: rgba(0, 74, 128, var(--tw-text-opacity));
-}.homepage-text{font-size:8vw;line-height:8vw}.nav-item{
+}.homepage-text{
+	font-size: 12vw;
+	line-height: 12vw;
+}@media (min-width: 1024px){.homepage-text{
+		font-size: 8vw;
+	}.homepage-text{
+		line-height: 8vw;
+	}
+}.nav-item{
 	--tw-text-opacity: 1;
 	color: rgba(0, 74, 128, var(--tw-text-opacity));
 	transition-property: background-color, border-color, color, fill, stroke;
@@ -614,8 +628,12 @@ video {
 	opacity: 0;
 }:root{--plyr-color-main: #004A80}.video-modal{position:fixed;z-index:100;inset:0px;background:#111;padding:24px;display:flex;flex-direction:column;justify-content:space-between;visibility:hidden;opacity:0;pointer-events:none;color:#fff}.video-modal.active{visibility:visible;opacity:1;pointer-events:auto}.video-modal__header{display:flex;justify-content:flex-end}.video-modal__close{cursor:pointer;padding:0px;background:transparent;outline:none;border:0px}.video-modal__inner{display:flex;justify-content:center;align-items:center}.video-modal__content{max-width:60rem;width:100%}.video-modal__footer{display:flex;justify-content:space-between}.video-modal__controls{display:flex;align-items:center}.video-modal__next{
 	padding: 1rem;
+}.video-modal__next:hover{
+	cursor: pointer;
 }.video-modal__prev{
 	padding: 1rem;
+}.video-modal__prev:hover{
+	cursor: pointer;
 }.hover\:text-gray-300:hover{
 	--tw-text-opacity: 1;
 	color: rgba(209, 213, 219, var(--tw-text-opacity));
@@ -640,5 +658,8 @@ video {
 	}
 }@media (min-width: 1024px){.lg\:grid-cols-3{
 		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}.lg\:px-8{
+		padding-left: 2rem;
+		padding-right: 2rem;
 	}
 }
