@@ -51,6 +51,7 @@ composer.lock
 wp-content/themes/blanket_forts/node_modules/
 wp-content/themes/blanket_forts/assets/css/blanket_forts.css
 wp-content/themes/blanket_forts/assets/js/blanket_forts.js
+!wp-content/themes/blanket_forts/index.php
 
 # wpengine specific
 .smushit-status
