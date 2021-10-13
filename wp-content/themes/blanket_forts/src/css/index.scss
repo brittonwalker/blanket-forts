@@ -18,7 +18,7 @@ p {
 }
 
 .content-wrapper {
-	@apply pt-[20vh] px-8 min-h-screen;
+	@apply pt-[20vh] px-4 lg:px-8 min-h-screen;
 }
 
 .homepage-wrapper {
@@ -106,8 +106,9 @@ p {
 }
 
 .homepage-text {
-	font-size: 8vw;
-	line-height: 8vw;
+	@apply text-[12vw] lg:text-[8vw] leading-[12vw] lg:leading-[8vw];
+	// font-size: 8vw;
+	// line-height: 8vw;
 }
 
 .nav-item {
@@ -199,9 +200,9 @@ p {
 		align-items: center;
 	}
 	&__next {
-		@apply p-4;
+		@apply p-4 hover:cursor-pointer;
 	}
 	&__prev {
-		@apply p-4;
+		@apply p-4 hover:cursor-pointer;
 	}
 }
