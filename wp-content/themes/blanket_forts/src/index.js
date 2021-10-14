@@ -1,10 +1,14 @@
 import './css/index.scss';
+
+
+
 import { ImgReveal } from './js/ImgReveal';
 import { LightBox } from './js/lightbox';
 import { Videos } from './js/videos';
 import { GridVideo } from './js/GridVideo';
 import { preloadImages } from './js/utils';
 import { TextLinesReveal } from './js/TextLinesReveal';
+import { Menu } from './js/Menu';
 
 // DOM elements:
 let DOM = {
@@ -41,6 +45,7 @@ const showContent = () => {
 	new Videos();
 	new GridVideo([...document.querySelectorAll('.grid-video')]);
 	new LightBox();
+	new Menu();
 };
 
 // Preload images
