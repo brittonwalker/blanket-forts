@@ -22,6 +22,11 @@
 }
 
 .page.home {
+	&.menu-active {
+		.menu-button {
+			@apply text-antique-white;
+		}	
+	}
 	.home-link {
 		@apply text-dark-cerulean;
 	}

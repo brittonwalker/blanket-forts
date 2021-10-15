@@ -115,10 +115,28 @@ p {
 		@apply flex items-center;
 	}
 	&__next {
-		@apply p-4 hover:cursor-pointer;
+		@apply p-4 pb-0 hover:cursor-pointer;
 	}
 	&__prev {
-		@apply p-4 hover:cursor-pointer;
+		@apply p-4 pb-0 hover:cursor-pointer;
+	}
+	&__caption {
+		@apply flex items-end;
 	}
 }
 
+.social-link {
+	@apply p-2 pl-0 inline-block;
+}
+
+.about-left-col {
+	line-height: 100%;
+	@apply text-[10vw] md:text-5xl;
+}
+
+.copy-link-alert {
+	&.active {
+		@apply opacity-100;
+	}
+	@apply h-screen w-screen text-[10vw] flex justify-center items-center transform -rotate-45 top-0 left-0 fixed pointer-events-none transition-opacity duration-300 opacity-0;
+}
