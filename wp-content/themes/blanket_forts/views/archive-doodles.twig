@@ -2,9 +2,9 @@
 
 {% block content %}
   <main class="">
-	<ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+	<ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-4 lg:space-y-0">
 		{% for i in 0..10 %}
-			<li class="p-[3vw] grid-item">
+			<li class="lg:p-[3vw] grid-item">
 				<a class="grid__img-wrap" title="Caption for gallery item {{ i }}" href="https://source.unsplash.com/random/1280x720">
 					<img class="grid__img" src="https://source.unsplash.com/random/1280x720" alt="">
 				</a>
