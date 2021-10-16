@@ -1,0 +1,20 @@
+{% extends "index.twig" %}
+
+{% block content %}
+  <main class="">
+    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-4 lg:space-y-0" id="video-grid">
+      {% for item in posts %}
+        <li class="lg:p-[3vw]">
+          <div class="grid-video" data-video-src="https://player.vimeo.com/video/{{ item.vimeo_id }}" data-video-title="{{ item.title }}" tabindex="0">
+            <div class="grid__img-wrap" title="Caption for gallery item {{ i }}" href="https://source.unsplash.com/random/1280x720">
+              <img class="grid__img" src="{{ item.thumbnail.src }}" alt="Image for {{ item.title }}">
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </main>
+
+  {% include 'components/video-modal.twig' %}
+
+{% endblock %}

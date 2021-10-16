@@ -28,7 +28,7 @@ p {
 	@apply flex min-h-[80vh];
 }
 
-.archive {
+.page-template {
 	@apply bg-mustard text-black;
 }
 
@@ -47,7 +47,7 @@ p {
 	@apply text-dark-cerulean;
 }
 
-.page {
+.page-template-default {
 	@apply bg-dark-cerulean text-antique-white;
 }
 
@@ -123,6 +123,12 @@ p {
 	&__caption {
 		@apply flex items-end;
 	}
+	&__title {
+		@apply flex items-end ml-6;
+	}
+	&__meta {
+		@apply flex items-end;
+	}
 }
 
 .social-link {
@@ -139,4 +145,12 @@ p {
 		@apply opacity-100;
 	}
 	@apply h-screen w-screen text-[10vw] flex justify-center items-center transform -rotate-45 top-0 left-0 fixed pointer-events-none transition-opacity duration-300 opacity-0;
+}
+
+.site-credit {
+	@apply fixed right-8 bottom-8;
+}
+
+.social-links {
+	@apply fixed left-4 lg:left-8 bottom-4;
 }

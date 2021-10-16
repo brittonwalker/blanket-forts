@@ -20,6 +20,7 @@ export class GridVideo {
 		this.DOM.content =this.DOM.modal.querySelector('.video-modal__content')
 		this.DOM.close = this.DOM.modal.querySelector('.video-modal__close')
 		this.DOM.caption = this.DOM.modal.querySelector('.video-modal__caption')
+		this.DOM.title = this.DOM.modal.querySelector('.video-modal__title')
 		this.DOM.next = this.DOM.modal.querySelector('.video-modal__next')
 		this.DOM.prev = this.DOM.modal.querySelector('.video-modal__prev');
 
@@ -70,6 +71,7 @@ export class GridVideo {
 		// Update content in modal
 		this.DOM.content.innerHTML = video;
 		this.DOM.caption.innerText = `${this.index + 1} / ${this.DOM.els.length}`;
+		this.DOM.title.innerText = `${this.DOM.els[this.index].dataset.videoTitle}`;
 
 		// Make it a Plyr object and activate modal
 		new Plyr(this.DOM.content.firstChild).play();
@@ -84,6 +86,7 @@ export class GridVideo {
 		// Update content in modal
 		this.DOM.content.innerHTML = video;
 		this.DOM.caption.innerText = `${this.index + 1} / ${this.DOM.els.length}`;
+		this.DOM.title.innerText = `${this.DOM.els[this.index].dataset.videoTitle}`;
 
 		// Make it a Plyr object
 		new Plyr(this.DOM.content.firstChild);
@@ -97,6 +100,7 @@ export class GridVideo {
 		// Update content in modal
 		this.DOM.content.innerHTML = video;
 		this.DOM.caption.innerText = `${this.index + 1} / ${this.DOM.els.length}`;
+		this.DOM.title.innerText = `${this.DOM.els[this.index].dataset.videoTitle}`;
 
 		// Make it a Plyr object and a
 		new Plyr(this.DOM.content.firstChild);
