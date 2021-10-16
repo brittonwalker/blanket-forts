@@ -6,6 +6,8 @@ export class CopyLink {
  
 	constructor() {
 		
+		if (!document.getElementById("copy-link")) return;
+
 		this.DOM = {
 			el: document.getElementById("copy-link"),
 			alert: document.getElementById("copy-link-alert"),
