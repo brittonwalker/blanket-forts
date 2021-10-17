@@ -44,6 +44,7 @@ Timber::$dirname = array( 'templates', 'views' );
 Timber::$autoescape = false;
 
 require_once( __DIR__ . '/classes/Enqueue.php' );
+require_once( __DIR__ . '/classes/TimberContext.php' );
 require_once( __DIR__ . '/functions/custom-post-types.php' );
 
 add_filter('use_block_editor_for_post_type', 'prefix_disable_gutenberg', 10, 2);

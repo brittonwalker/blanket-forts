@@ -5,11 +5,13 @@
             <div class="justify-between flex items-center w-full">
                 <a class="flex-shrink-0 home-link" href="/">Blanket Forts</a>
                 <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <a class="nav-item px-3 py-2 rounded-md text-4xl" href="/videos/">Videos</a>
-                        <a class="nav-item px-3 py-2 rounded-md text-4xl" href="/doodles/">Doodles</a>
-                        <a class="nav-item px-3 py-2 rounded-md text-4xl" href="/about/">Info</a>
-                    </div>
+                    <ul class="nav-items">
+                        {% for item in menu.items %}
+                            <li class="nav-item">
+                                <a class="nav-item__link" href="{{ item.url }}">{{ item.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
                 </div>
             </div>
             <div class="-mr-2 flex md:hidden">
