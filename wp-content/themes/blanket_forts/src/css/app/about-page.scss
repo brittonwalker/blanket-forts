@@ -11,7 +11,7 @@
 }
 
 .site-credit {
-	@apply fixed right-8 bottom-8;
+	@apply fixed right-8 bottom-8 hidden md:block;
 }
 
 .social-links {
