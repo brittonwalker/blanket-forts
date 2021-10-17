@@ -74,10 +74,6 @@ function create_post_types() {
         'publicly_queryable'  => true,
 		'menu_position'       => 15,
 		'show_in_rest' 		  => false,
-		// 'rewrite'             => array(
-		// 	'slug' => 'books',
-		// 	'with_front' => false
-		// ),
 		'supports'            => array(
 			'title', 'thumbnail', 'editor'
 		)
@@ -106,16 +102,12 @@ function create_post_types() {
 		'exclude_from_search' => false,
 		'taxonomies'          => array(),
 		'public'              => true,
-        'has_archive'         => true,
+        'has_archive'         => false,
         'publicly_queryable'  => true,
 		'menu_position'       => 15,
 		'show_in_rest' 		  => false,
-		// 'rewrite'             => array(
-		// 	'slug' => 'books',
-		// 	'with_front' => false
-		// ),
 		'supports'            => array(
-			'title', 'thumbnail', 'editor'
+			'title', 'thumbnail',
 		)
 	);
 
