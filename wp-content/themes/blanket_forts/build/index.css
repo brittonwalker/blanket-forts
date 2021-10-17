@@ -542,6 +542,12 @@ video {
 }.page-template-info .menu-button{
 	--tw-text-opacity: 1;
 	color: rgba(247, 233, 216, var(--tw-text-opacity));
+}.page-template-info .menu{
+	--tw-bg-opacity: 1;
+	background-color: rgba(247, 233, 216, var(--tw-bg-opacity));
+}.page-template-info .mobile-nav-item{
+	--tw-text-opacity: 1;
+	color: rgba(0, 74, 128, var(--tw-text-opacity));
 }.nav-item{
 	--tw-text-opacity: 1;
 	color: rgba(0, 74, 128, var(--tw-text-opacity));
@@ -713,6 +719,10 @@ video {
 	position: fixed;
 	right: 2rem;
 	bottom: 2rem;
+	display: none;
+}@media (min-width: 768px){.site-credit{
+		display: block;
+	}
 }.social-links{
 	position: fixed;
 	left: 1rem;
