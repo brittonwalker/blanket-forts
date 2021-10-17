@@ -1,6 +1,5 @@
 import './css/index.scss';
 
-import { LightBox } from './js/lightbox';
 import { Videos } from './js/videos';
 import { GridVideo } from './js/GridVideo';
 import { preloadImages } from './js/utils';
@@ -42,7 +41,6 @@ const showContent = () => {
 	}
 	new Videos();
 	new GridVideo([...document.querySelectorAll('.grid-video')]);
-	new LightBox();
 	new Menu();
 	new CopyLink();
 };
