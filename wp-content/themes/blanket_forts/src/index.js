@@ -45,3 +45,17 @@ preloadImages('.grid__img').then(() => {
     // show content
     showContent();
 });
+
+window.addEventListener('load', (event) => {
+	let vh = window.innerHeight * 0.01;
+	document.getElementById('content').style.setProperty('--vh', `${vh}px`);
+	console.log('page is fully loaded');
+
+	window.addEventListener('resize', () => {
+	// We execute the same script as before
+	let vh = window.innerHeight * 0.01;
+	document.getElementById('content').style.setProperty('--vh', `${vh}px`);
+	});
+});
+
+//   console.log('hello')
