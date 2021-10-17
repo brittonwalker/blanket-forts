@@ -15,14 +15,7 @@ let DOM = {
 // text content elements
 DOM.textContent = {
     heading: document.querySelector('.homepage-text'),
-    // primary: document.querySelector('.content-primary'),
-    // secondary: document.querySelector('.content-secondary')
 };
-
-// DOM.images.forEach(element => {
-// 	let image = new ImgReveal(element);	
-// 	return image;
-// });
  
 // show the initial texts and images
 const showContent = () => {
