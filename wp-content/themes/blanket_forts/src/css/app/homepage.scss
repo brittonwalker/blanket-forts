@@ -1,0 +1,15 @@
+.page.home {
+	@apply bg-antique-white text-dark-cerulean;
+}
+
+.oh {
+	@apply overflow-hidden;
+}
+
+.homepage-text {
+	@apply text-[12vw] leading-[12vw] lg:text-[9vw] lg:leading-[9vw] uppercase pb-8;
+}
+
+.homepage-wrapper {
+	@apply flex min-h-[80vh];
+}

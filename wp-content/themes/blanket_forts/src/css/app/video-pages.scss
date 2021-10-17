@@ -1,0 +1,25 @@
+.page-template-doodles,
+.page-template-videos {
+	@apply bg-mustard text-black;
+}
+
+.grid__img-wrap {
+	@apply relative overflow-hidden;
+    will-change: transform;
+}
+
+.grid__img {
+	@apply overflow-hidden relative;
+    will-change: transform;
+}
+
+.grid__img-wrap {
+	@apply transition-transform duration-300 hover:scale-105 block;
+}
+
+.grid__img-wrap {
+	&.loading {
+		@apply opacity-0 transform translate-y-8;
+	}
+	@apply opacity-100 translate-y-0 transition-all duration-300;
+}
