@@ -795,7 +795,7 @@ video {
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
-}.content-wrapper{height:calc(var(--vh, 1vh)*100)}.home-link{
+}.content-wrapper{min-height:-webkit-fill-available}.home-link{
 	--tw-text-opacity: 1;
 	color: rgba(0, 74, 128, var(--tw-text-opacity));
 }.page-template-default, .page-template-info{
