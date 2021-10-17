@@ -29,6 +29,13 @@
                 "operator": "==",
                 "value": "videos"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "doodles"
+            }
         ]
     ],
     "menu_order": 0,
@@ -39,5 +46,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1634411786
+    "modified": 1634422148
 }
