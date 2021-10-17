@@ -3,7 +3,9 @@
 {% block content %}
 	<div class="homepage-wrapper">
 		<div class="grid mt-auto">
-			<p class="homepage-text uppercase">blanket forts is a post-production + animation lab in Portland, Maine</p>
+			<div class="homepage-text">
+				{{ post.content }}
+			</div>
 		</div>
 	</div>
 {% endblock %}
