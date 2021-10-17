@@ -60,6 +60,12 @@
 	.menu-button {
 		@apply text-antique-white;
 	}
+	.menu {
+		@apply bg-antique-white;
+	}
+	.mobile-nav-item {
+		@apply text-dark-cerulean;
+	}
 }
 
 .nav-item {

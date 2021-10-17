@@ -47,10 +47,11 @@ export class Menu {
 			x: 0,
 			y: 0
         })
-		.to(this.DOM.navItems, {
+		.to([...this.DOM.navItems].reverse(), {
 			opacity: 1,
 			x: 0,
-			delay: .15
+			delay: .15,
+			stagger: 0.1,
 		})
 	}
 
@@ -58,10 +59,11 @@ export class Menu {
 		document.body.classList.remove('menu-active')
 
 		gsap.timeline({defaults: {duration: .3, ease: 'expoIn'}})
-		.to(this.DOM.navItems, {
+		.to([...this.DOM.navItems].reverse(), {
 			opacity: 0,
 			x: window.outerWidth * .15,
-			duration: .15
+			duration: .15,
+			stagger: 0.05,
 		})
         .to([this.DOM.menu], {
 			x: window.outerWidth,
